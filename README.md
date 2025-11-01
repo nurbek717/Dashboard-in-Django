@@ -21,19 +21,21 @@ Follow these steps to run the project on your local machine:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/Dashboard-in-Django.git
-cd Dashboard-in-Django
+//vertual muhit
+source final_venv/bin/activate
+
+//Django o'rnatish:
+pip install django
 
 
-# Create
-python -m venv env
 
-# Activate (Windows)
-env\Scripts\activate
+//Admin foydalanuvchi (superuser) yaratamiz
+python3 manage.py createsuperuser
 
-# Activate (Mac/Linux)
-source env/bin/activate
 
-python manage.py migrate
+//Serverni lokalda ishga tushuramiz
+python3 manage.py runserver
 
-python manage.py runserver
+
+
+
